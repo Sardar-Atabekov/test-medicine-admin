@@ -1,12 +1,12 @@
-import React, { memo, useState } from "react";
+import React, { memo, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 import "./navbar.css";
 import { useNavigate, useLocation } from 'react-router-dom';
 
 const NavBar = memo(() => {
-    const navigate = useNavigate();
     let location = useLocation();
+    const navigate = useNavigate();
 
     const Links = [
         // { id: 1, pathname: "/staff/", name: "Сотрудники" },
@@ -14,7 +14,12 @@ const NavBar = memo(() => {
         { id: 3, pathname: "/nurses/", name: "Медсестры" },
     ];
 
-    const [activeLink, setActiveLink] = useState(location.pathname);
+    const [activeLink, setActiveLink] = useState('');
+
+    useEffect(()=>{
+        setActiveLink(location.pathname)
+    }, [location])
+
     const confirmMessage = () => {
         Swal.fire({
             title: "Вы уверены?",

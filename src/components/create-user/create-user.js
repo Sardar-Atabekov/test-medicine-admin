@@ -26,8 +26,8 @@ function CreateEmployee({ staffData, setStaffData, tableName }) {
         } else if (staffData.some(item => item.post == 3 && item.post == data.post && item.department == data.department)) {
             confirmAlert('Может быть только 1 старшая сестра')
         } else {
-            id = JSON.parse(localStorage.getItem("id")) + 1;
-            localStorage.setItem("id", JSON.stringify(id));
+            id = JSON.parse(localStorage.getItem(`${tableName}Id`)) + 1;
+            localStorage.setItem(`${tableName}Id`, JSON.stringify(id));
             data.id = id;
             setStaffData([...staffData, data])
             Alert('Данные о сотруднике добавлены ')

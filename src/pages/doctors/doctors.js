@@ -25,7 +25,7 @@ const DoctorsPage = () => {
     return (
         <div className="main doctors">
             <Title>Врачи</Title>
-            <StaffTable data={doctors} setData={setDoctors} JsonData={DoctorsData} table="doctors"/>
+            <StaffTable data={doctors} setData={setDoctors} JsonData={DoctorsData} tableName="doctors"/>
         </div>
     );
 };

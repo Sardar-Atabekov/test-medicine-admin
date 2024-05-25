@@ -29,9 +29,9 @@ const EditUser = ({ usersData, setUsersData, userId, tableName }) => {
             data[key] = value;
         });
 
-        if (usersData.some(item => item.post == 1 && item.post == data.post && item.department == data.department)) {
+        if (usersData.some(item => item.post == 1 && item.post == data.post && item.department == data.department && item.id != data.id)) {
             confirmAlert(`Может только 1 заведующий`)
-        } else if (usersData.some(item => item.post == 3 && item.post == data.post && item.department == data.department)) {
+        } else if (usersData.some(item => item.post == 3 && item.post == data.post && item.department == data.department && item.id != data.id)) {
             confirmAlert('Может быть только 1 старшая сестра')
         } else {
             let updateData = usersData.map(item => {
@@ -118,14 +118,14 @@ const EditUser = ({ usersData, setUsersData, userId, tableName }) => {
                                     <option value="">
                                         Выберите должность
                                     </option>
-                                    {tableName == "doctors" ? 
-                                    <>
-                                        <option value="1" >
-                                            Заведующий
-                                        </option>
-                                        <option value="2" >
-                                            Врач-специалист
-                                        </option>
+                                    {tableName == "doctors" ?
+                                        <>
+                                            <option value="1" >
+                                                Заведующий
+                                            </option>
+                                            <option value="2" >
+                                                Врач-специалист
+                                            </option>
                                         </> :
                                         <>
                                             <option value="3" >
