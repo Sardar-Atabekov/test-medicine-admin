@@ -7,7 +7,6 @@ const EditUser = ({ usersData, setUsersData, userId, tableName }) => {
     const [editData, setEditData] = useState({})
     const [editModal, setEditModal] = useState(false)
 
-    console.log('usersData', usersData)
     const handleUpdate = () => {
         if (editModal) {
             setEditModal(false)
@@ -38,7 +37,7 @@ const EditUser = ({ usersData, setUsersData, userId, tableName }) => {
                 if (item.id == data.id) item = data;
                 return item;
             })
-            console.log('updateData', updateData)
+  
             setUsersData(updateData)
             handleUpdate();
             Alert('Данные о сотруднике обновлены')
