@@ -65,7 +65,7 @@ const StaffTable = ({ data, setData, JsonData, tableName }) => {
                     {showData.length > 0 ? (
                         showData.map((user) => (
                             <tr key={user.id}>
-                                <td data-th="name" className={"tbody-item"}>
+                                <td data-th="name" className={"tbody-item user-name"}>
                                     {user.name} {user.surname} {user.patronymic}
                                 </td>
                                 <td data-th="department" className={"tbody-item"}>

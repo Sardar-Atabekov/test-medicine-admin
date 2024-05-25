@@ -53,20 +53,10 @@
 
 .input-blocks {
     width: 300px;
-    margin: 20px 0;
+    margin: 20px 0 0;
     font-family: 'Montserrat-Medium';
 }
 
-
-.user-status {
-    font-size: 18px;
-    color: #808080;
-    line-height: 22px;
-    font-weight: bold;
-    text-transform: capitalize;
-    font-family: "Montserrat-Bold";
-
-}
 
 
 
