@@ -4,11 +4,11 @@ import NursesPage from "./pages/nurses/nurses";
 import Header from "./components/header/header";
 import Footer from "./components/footer/footer";
 import DoctorsPage from "./pages/doctors/doctors";
+import NotFoundPage from "./pages/404/404";
 import { Route, Routes, BrowserRouter } from "react-router-dom";
 import './App.css';
 
 const NavBar = lazy(() => import('./components/navbar/navbar'));
-
 
 function App() {
   return (
@@ -25,7 +25,7 @@ function App() {
               <Route path="/nurses/" exact element={<NursesPage />} />
               <Route path="/doctors/" exact element={<DoctorsPage />} />
               {/* <Route path="/create-user/doctor" exact element={<CreateEmployee />} /> */}
-              {/* <Route path="*" exact element={NotFoundPage} /> */}
+              <Route path="*" exact element={<NotFoundPage/>} />
             </Routes>
             <Footer />
           </main>
