@@ -1,0 +1,70 @@
+[
+  {
+    "id": 1,
+    "name": "Sardar",
+    "surname": "Atabekov",
+    "patronymic": "",
+    "post": "Moradabad",
+    "department": 1
+  },
+  {
+    "id": 2,
+    "name": "Nikita",
+    "surname": "",
+    "patronymic": "",
+    "post": "Lucknow",
+    "department": 1
+  },
+  {
+    "id": 3,
+    "name": "Deeksha",
+    "surname": "",
+    "patronymic": "",
+    "post": "Noida",
+    "department": 1
+  },
+  {
+    "id": 4,
+    "name": "Ritesh",
+    "surname": "",
+    "patronymic": "",
+    "post": "Delhi",
+    "department": 1
+  },
+  {
+    "id": 5,
+    "name": "Somya",
+    "post": "Gurugram",
+    "department": 1
+  },
+  {
+    "id": 6,
+    "name": "Eshika",
+    "surname": "",
+    "patronymic": "",
+    "post": "Mumbai",
+    "department": 1
+  },
+  {
+    "id": 7,
+    "name": "Kalpana",
+    "post": "Rampur",
+    "department": 1
+  },
+  {
+    "id": 8,
+    "name": "Parul",
+    "surname": "",
+    "patronymic": "",
+    "post": "Chandigarh",
+    "department": 2
+  },
+  {
+    "id": 9,
+    "name": "Himani",
+    "surname": "",
+    "patronymic": "",
+    "post": "Dehradun",
+    "department": 2
+  }
+]

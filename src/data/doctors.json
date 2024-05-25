@@ -1,0 +1,43 @@
+[
+  {
+    "id": 1,
+    "name": "Sardar",
+    "surname": "Atabekov",
+    "patronymic": "Samarbekovish",
+    "post": 1,
+    "department": 1
+  },
+  {
+    "id": 2,
+    "name": "Nikita",
+    "surname": "",
+    "patronymic": "",
+    "post": 2,
+    "department": 1
+  },
+  {
+    "id": 3,
+    "name": "Alina",
+    "surname": "",
+    "patronymic": "",
+    "post": 2,
+    "department": 1
+  },
+
+  {
+    "id": 4,
+    "name": "Parul",
+    "surname": "",
+    "patronymic": "",
+    "post": 2,
+    "department": 2
+  },
+  {
+    "id": 5,
+    "name": "Himani",
+    "surname": "",
+    "patronymic": "",
+    "post": 1,
+    "department": 2
+  }
+]

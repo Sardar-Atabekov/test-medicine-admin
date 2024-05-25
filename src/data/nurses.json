@@ -1,0 +1,44 @@
+[
+    {
+      "id": 1,
+      "name": "Clara",
+      "surname": "Erikova",
+      "patronymic": "",
+      "post": 3,
+      "department": 1
+    },
+    {
+      "id": 2,
+      "name": "Nikita",
+      "surname": "Calashnikova",
+      "patronymic": "",
+      "post": 4,
+      "department": 1
+    },
+    {
+      "id": 3,
+      "name": "Alina",
+      "surname": "",
+      "patronymic": "",
+      "post": 5,
+      "department": 1
+    },
+  
+    {
+      "id": 4,
+      "name": "Alisa",
+      "surname": "",
+      "patronymic": "",
+      "post": 4,
+      "department": 2
+    },
+    {
+      "id": 5,
+      "name": "Amina",
+      "surname": "",
+      "patronymic": "",
+      "post": 3,
+      "department": 2
+    }
+  ]
+  
