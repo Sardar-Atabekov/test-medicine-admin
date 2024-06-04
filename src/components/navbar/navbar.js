@@ -1,10 +1,10 @@
 import React, { memo, useEffect, useState } from "react";
+import { useNavigate, useLocation } from 'react-router-dom';
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 import "./navbar.css";
-import { useNavigate, useLocation } from 'react-router-dom';
 
-const NavBar = memo(() => {
+const NavBar = memo(({ setToken }) => {
     let location = useLocation();
     const navigate = useNavigate();
 
@@ -16,7 +16,7 @@ const NavBar = memo(() => {
 
     const [activeLink, setActiveLink] = useState('');
 
-    useEffect(()=>{
+    useEffect(() => {
         setActiveLink(location.pathname)
     }, [location])
 
@@ -31,7 +31,8 @@ const NavBar = memo(() => {
             confirmButtonText: "Да, выйти",
         }).then((result) => {
             if (result.value) {
-                localStorage.removeItem("adminDate");
+                localStorage.removeItem("token");
+                setToken(false)
                 navigate('/');
             }
         });
